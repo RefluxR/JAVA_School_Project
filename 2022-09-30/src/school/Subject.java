@@ -13,6 +13,12 @@ public class Subject {
         this.subjectID = subjectID;
     }
 
+    //Method
+    public void register(Student student) {
+        studentList.add(student);
+    }
+
+    //Getter Setter
     public int getSubjectID() {
         return subjectID;
     }
@@ -35,13 +41,5 @@ public class Subject {
 
     public void setGradeType(int gradeType) {
         this.gradeType = gradeType;
-    }
-
-    public ArrayList<Student> getStudentList() {
-        return studentList;
-    }
-
-    public void setStudentList(ArrayList<Student> studentList) {
-        this.studentList = studentList;
     }
 }

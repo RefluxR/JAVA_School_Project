@@ -8,21 +8,18 @@ public class Student {
     private Subject majorSubject;
     private ArrayList<Score> scoreList = new ArrayList<Score>();
 
-    public Student(int studentID, String studentName, Subject majorSubject, ArrayList<Score> scoreList) {
+    public Student(int studentID, String studentName, Subject majorSubject) {
         this.studentID = studentID;
         this.studentName = studentName;
         this.majorSubject = majorSubject;
-        this.scoreList = scoreList;
     }
 
     //Method
-
     public void addSubjectScore(Score score) {
         scoreList.add(score);
     }
     
     //Getter Setter
-    
     public int getStudentID() {
         return studentID;
     }
